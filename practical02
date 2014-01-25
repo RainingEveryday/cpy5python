@@ -1,6 +1,7 @@
 #1 Checking if a number is even:
 
 number = int(input("Please input the integer you wish to check as to whether it is even or not: "))
+
 if number % 2 == 0:
     print("{0} is even.".format(number))
 else:
@@ -19,3 +20,28 @@ if side1 + side2 > side3 and side2 + side3 > side1 and side3 + side1 > side2:
     print("Your shape is a triangle with an external perimeter of {0:.2f}.".format(perimeter))
 else:
     print("Your shape is not a valid triangle.")
+    
+#=========================================================================================================#
+
+#3 Determining a grade from a score:
+
+score = float(input("Please enter your score(0-100 inclusive) here: "))
+
+if 70 <= score <= 100:
+    print("Your grade is an A.")
+elif 60 <= score <= 69:
+    print("Your grade is a B.")
+elif 55 <= score <= 59:
+    print("Your grade is a C.")
+elif 50 <= score <= 54:
+    print("Your grade is a D.")
+elif 45 <= score <= 49:
+    print("Your grade is an E.")
+elif 35 <= score <= 44:
+    print("Your grade is an S.")
+elif 0 <= score <= 34:
+    print("Your grade is a U.")
+else:
+    print("You did not enter a valid score. Your score must be between 0-100 inclusive.")
+    
+#=========================================================================================================#
