@@ -138,7 +138,7 @@ winners = []
 
 chosen = 0
 while chosen <= 2:
-    randomize = randint(0, int(len(chancelist)))
+    randomize = randint(0, int(len(chancelist) - 1))
     winners.append(chancelist[randomize])
     chosen = chosen + 1
     if winners.count(chancelist[randomize]) >= 2:
