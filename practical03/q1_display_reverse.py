@@ -8,4 +8,5 @@ def reverse_int(n):
         for i in range((len(num)-1),-1,-1):
            print(num[i], end="")
 
-reverse_int(34567)
+prompt = int(input("Please input an integer that you wish to reverse in display: "))
+reverse_int(prompt)
