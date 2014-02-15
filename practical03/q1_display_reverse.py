@@ -5,7 +5,7 @@ def reverse_int(n):
         print(n)
     else:
         num = str(n)
-        for i in range((len(num)-1),-1,-1):
+        for i in range((len(num)-1),-1,-1): #Or use [::-1] to print reverse
            print(num[i], end="")
 
 prompt = int(input("Please input an integer that you wish to reverse in display: "))
