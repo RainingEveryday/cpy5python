@@ -1,0 +1,512 @@
+/* Reset */
+@import url("normalize.css");
+
+/* Apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+/* CSS for overall */
+
+html {
+  background: url("backgroundimg.jpg") no-repeat center center fixed; 
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-size:cover;
+}
+
+html, body {
+	font-size:10px;
+}	
+
+/* ==================== CSS for Fonts ====================== */
+h1 {
+	font-family:Istok Web;
+	font-size:4.0em;
+	font-weight:600;
+	letter-spacing:1px;
+	color:#FFFFFF;
+}
+
+h2 {
+	font-family:Istok Web;
+	font-size:2.5rem;
+	font-weight:400;
+	color:#FFFFFF;
+}
+
+/* ================= CSS for Header (top menu) =================*/
+
+#topmenu {
+	width:100%;
+	height:70px;
+	background-color:rgba(0,0,0,0.6);
+}
+
+#topmenu ul li {
+	display:inline;
+}
+
+/* ==================== CSS for Body ======================= */
+#bodycontainer {
+	width:95%;
+	height:350px;
+	background-color:rgba(0,0,0,0.6);
+	margin:20px auto 0px;
+	border-radius:20px;
+}
+
+#suggestion {
+	width:95%;
+	height:460px;
+	background-color:rgba(0,0,0,0.6);
+	margin:20px auto 0px;
+	border-radius:20px;
+}
+
+#footer {
+	width:100%;
+	height:40px;
+	background-color:rgba(0,0,0,0.6);
+	position:relative;
+	bottom:0;
+	margin:20px auto 0px;
+}
+
+/* [][][][][][][][][] RESPONSIVE DESIGN BELOW [][][][][][][][][] */
+
+/* ================= SUPERWIDE SCREENS ==================== */
+@media (min-width:1500px) and (max-width:2000px) {
+	/* HEADER CSS */
+	#topmenucontainer {
+		width:100%;
+		height:70px;
+		margin:0 auto;
+		padding:15px 100px;
+	}
+	
+	#topmenulogocontainer {
+		float:left;
+		width:20%;
+	}
+
+	#topmenulogo {
+		width:140px;
+		height:40px;
+	}
+	
+	#topmenunav {
+		float:right;
+		width:40%;
+		line-height:40px;
+		text-align:right;
+	}
+	
+	#topmenunav ul li {
+		display:inline;
+		margin-left:50px;	
+	}
+	
+	#topmenunav ul li a {
+		font-family:Helvetica, sans-serif;
+		font-size:1.8rem;
+		font-weight:bold;
+		color:#E6E6E6;
+	}
+	
+	#topmenunav ul li a:hover {
+		color:#FFFFFF;
+	}
+	/* SUGGESTION BOX CSS */
+	#suggestioncontainer {
+		width:100%;
+		height:10%;
+		padding:10px;
+		text-align:center;
+	}
+	
+	#suggestionvideocontainer {
+		width:100%;
+		height:90%;
+		padding:20px;
+		text-align:center;
+	}
+	/* GENRE CSS */
+	#titlecontainer {
+		width:100%;
+		height:20%;
+		padding:5px;
+		text-align:center;
+	}
+	
+	#scrollcontainer {
+		width:100%;
+		height:80%;
+		padding:0px 20px 30px;
+		text-align:center;
+	}
+	/* GENRE LOGO CSS */
+	#classicallogo {
+		width:250px;
+		height:250px;
+		display:inline;
+		margin-right:10px;
+	}
+	
+	#countrylogo {
+		width:250px;
+		height:250px;
+		display:inline;
+		margin-right:10px;
+	}
+	
+	#rocklogo {
+		width:250px;
+		height:250px;
+		display:inline;
+	}
+	/* FOOTER CSS */
+	#footercontainer {
+		width:100%;
+		height:40px;
+		text-align:center;
+		padding:13px 0px;
+	}
+	
+	#footertext {
+		font-family:Helvetica, sans-serif;
+		font-size:1.1rem;
+		font-weight:200;
+		color:#FFFFFF;
+		text-align:center;
+	}
+}
+
+/* ================= SEMI LARGE SCREENS =================== */
+@media (min-width:1200px) and (max-width:1499px) {
+	/* HEADER CSS */
+	#topmenucontainer {
+		width:100%;
+		height:70px;
+		margin:0 auto;
+		padding:15px 100px;
+	}
+	
+	#topmenulogocontainer {
+		float:left;
+		width:20%;
+	}
+
+	#topmenulogo {
+		width:140px;
+		height:40px;
+	}
+	
+	#topmenunav {
+		float:right;
+		width:40%;
+		line-height:40px;
+		text-align:right;
+	}
+	
+	#topmenunav ul li {
+		display:inline;
+		margin-left:50px;	
+	}
+	
+	#topmenunav ul li a {
+		font-family:Helvetica, sans-serif;
+		font-size:1.7rem;
+		font-weight:bold;
+		color:#E6E6E6;
+	}
+	
+	#topmenunav ul li a:hover {
+		color:#FFFFFF;
+	}
+	/* SUGGESTION BOX CSS */
+	#suggestioncontainer {
+		width:100%;
+		height:10%;
+		padding:10px;
+		text-align:center;
+	}
+	
+	#suggestionvideocontainer {
+		width:100%;
+		height:90%;
+		padding:20px;
+		text-align:center;
+	}
+	
+	#suggestion1 {
+		display:inline;
+		margin-right:50px;
+	}
+	
+	#suggestion2 {
+		display:inline;
+	}
+	/* GENRE CSS */
+	#titlecontainer {
+		width:100%;
+		height:20%;
+		padding:5px;
+		text-align:center;
+	}
+	
+	#scrollcontainer {
+		width:100%;
+		height:80%;
+		padding:0px 20px 30px;
+		text-align:center;
+	}
+	/* GENRE LOGO CSS */
+	#classicallogo {
+		width:250px;
+		height:250px;
+		display:inline;
+		margin-right:10px;
+	}
+	
+	#countrylogo {
+		width:250px;
+		height:250px;
+		display:inline;
+		margin-right:10px;
+	}
+	
+	#rocklogo {
+		width:250px;
+		height:250px;
+		display:inline;
+	}
+	/* FOOTER CSS */
+	#footercontainer {
+		width:100%;
+		height:40px;
+		text-align:center;
+		padding:13px 0px;
+	}
+	
+	#footertext {
+		font-family:Helvetica, sans-serif;
+		font-size:1.1rem;
+		font-weight:200;
+		color:#FFFFFF;
+		text-align:center;
+	}
+}
+
+/* ================= MEDIUM SIZED SCREENS ================= */
+@media (min-width: 900px) and (max-width:1199px) {
+	/* HEADER CSS */
+	#topmenucontainer {
+		width:100%;
+		height:70px;
+		margin:0 auto;
+		padding:15px 100px;
+	}
+	
+	#topmenulogocontainer {
+		float:left;
+		width:20%;
+	}
+
+	#topmenulogo {
+		width:140px;
+		height:40px;
+	}
+	
+	#topmenunav {
+		float:right;
+		width:40%;
+		line-height:40px;
+		text-align:right;
+	}
+	
+	#topmenunav ul li {
+		display:inline;
+		margin-left:50px;	
+	}
+	
+	#topmenunav ul li a {
+		font-family:Helvetica, sans-serif;
+		font-size:1.6rem;
+		font-weight:bold;
+		color:#E6E6E6;
+	}
+	
+	#topmenunav ul li a:hover {
+		color:#FFFFFF;
+	}
+	/* SUGGESTION BOX CSS */
+	#suggestioncontainer {
+		width:100%;
+		height:10%;
+		padding:10px;
+		text-align:center;
+	}
+	
+	#suggestionvideocontainer {
+		width:100%;
+		height:90%;
+		padding:20px;
+		text-align:center;
+	}
+	/* GENRE CSS */
+	#titlecontainer {
+		width:100%;
+		height:20%;
+		padding:5px;
+		text-align:center;
+	}
+	
+	#scrollcontainer {
+		width:100%;
+		height:80%;
+		padding:0px 20px 30px;
+		text-align:center;
+	}
+	/* GENRE LOGO CSS */
+	#classicallogo {
+		width:250px;
+		height:250px;
+		display:inline;
+		margin-right:10px;
+	}
+	
+	#countrylogo {
+		width:250px;
+		height:250px;
+		display:inline;
+		margin-right:10px;
+	}
+	
+	#rocklogo {
+		width:250px;
+		height:250px;
+		display:inline;
+	}
+	/* FOOTER CSS */
+	#footercontainer {
+		width:100%;
+		height:40px;
+		text-align:center;
+		padding:13px 0px;
+	}
+	
+	#footertext {
+		font-family:Helvetica, sans-serif;
+		font-size:1.1rem;
+		font-weight:200;
+		color:#FFFFFF;
+		text-align:center;
+	}
+}
+
+/* ================= SEMI SMALL SIZED SCREENS ================= */
+@media (min-width: 700px) and (max-width:899px) {
+	/* HEADER CSS */
+	#topmenucontainer {
+		width:100%;
+		height:70px;
+		margin:0 auto;
+		padding:15px 100px;
+	}
+	
+	#topmenulogocontainer {
+		float:left;
+		width:20%;
+	}
+
+	#topmenulogo {
+		width:140px;
+		height:40px;
+	}
+	
+	#topmenunav {
+		float:right;
+		width:40%;
+		line-height:40px;
+		text-align:right;
+	}
+	
+	#topmenunav ul li {
+		display:inline;
+		margin-left:50px;	
+	}
+	
+	#topmenunav ul li a {
+		font-family:Helvetica, sans-serif;
+		font-size:1.5rem;
+		font-weight:bold;
+		color:#E6E6E6;
+	}
+	
+	#topmenunav ul li a:hover {
+		color:#FFFFFF;
+	}
+	/* SUGGESTION BOX CSS */
+	#suggestioncontainer {
+		width:100%;
+		height:10%;
+		padding:10px;
+		text-align:center;
+	}
+	
+	#suggestionvideocontainer {
+		width:100%;
+		height:90%;
+		padding:20px;
+		text-align:center;
+	}
+	/* GENRE CSS */
+	#titlecontainer {
+		width:100%;
+		height:20%;
+		padding:5px;
+		text-align:center;
+	}
+	
+	#scrollcontainer {
+		width:100%;
+		height:80%;
+		padding:0px 20px 30px;
+		text-align:center;
+	}
+	/* GENRE LOGO CSS */
+	#classicallogo {
+		width:250px;
+		height:250px;
+		display:inline;
+		margin-right:10px;
+	}
+	
+	#countrylogo {
+		width:250px;
+		height:250px;
+		display:inline;
+		margin-right:10px;
+	}
+	
+	#rocklogo {
+		width:250px;
+		height:250px;
+		display:inline;
+	}
+	/* FOOTER CSS */
+	#footercontainer {
+		width:100%;
+		height:40px;
+		text-align:center;
+		padding:13px 0px;
+	}
+	
+	#footertext {
+		font-family:Helvetica, sans-serif;
+		font-size:1.1rem;
+		font-weight:200;
+		color:#FFFFFF;
+		text-align:center;
+	}
+}
